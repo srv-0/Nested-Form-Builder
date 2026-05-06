@@ -1,0 +1,113 @@
+.sv-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sv-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}
+
+.sv-check {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--green-dim);
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sv-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sv-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.sv-btn {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sv-btn:hover { color: var(--text); border-color: var(--muted); }
+
+.sv-btn-red { border-color: var(--red-dim); color: var(--red); }
+.sv-btn-red:hover { background: var(--red-dim); border-color: var(--red); }
+
+.sv-tree {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.sv-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.sv-row:last-child { border-bottom: none; }
+
+.sv-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 1px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.sv-text {
+  flex: 1;
+  font-size: 13px;
+  min-width: 0;
+}
+
+.sv-empty { color: var(--faint); font-style: italic; }
+
+.sv-type {
+  font-size: 10px;
+  color: var(--faint);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.sv-ans {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+.sv-true { background: var(--green-dim); color: var(--green); }
+.sv-false { background: var(--red-dim); color: var(--red); }
+
+.sv-empty-msg { padding: 24px; text-align: center; color: var(--muted); font-size: 13px; }
