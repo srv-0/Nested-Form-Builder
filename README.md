@@ -28,7 +28,7 @@ Drag and Drop: @hello-pangea/dnd
 Styling: Modular CSS for component-level isolation.
 
 # Project Structure
-Plaintext
+```Plaintext
 src/
  ├── components/
  │    ├── Question.jsx       # The core recursive engine
@@ -39,6 +39,7 @@ src/
  ├── utils.js                # Helpers (Tree traversal, UID, formatting)
  ├── App.js                  # Main entry and DnD context
  └── index.js                # React DOM rendering
+```
 # Logic Implementation Details
 Recursive Updates
 Since the form is structured as a tree, all updates (text changes, type toggles, or deletions) are handled via recursive functions in utils.js or useQuestions.js. This ensures that even a question nested five levels deep can be updated immutably without affecting the rest of the tree.
