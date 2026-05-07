@@ -1,4 +1,7 @@
 # Nested Form Builder
+
+Deployment - https://nested-form-builder-nine.vercel.app/
+
 Submitted by: Saurav Singh
 
 Institution: National Institute of Technology (NIT), Delhi
@@ -22,13 +25,13 @@ State Persistence: Utilizes LocalStorage to ensure the form configuration is pre
 Finalized Review Mode: A "Submit" feature that toggles the builder into a clean, read-only view for data verification.
 
 # Technical Stack
-Frontend Framework: React.js
+** Frontend Framework: React.js
 
-State Management: Custom Hook (useQuestions.js) with an immutable tree-traversal pattern.
+** State Management: Custom Hook (useQuestions.js) with an immutable tree-traversal pattern.
 
-Drag and Drop: @hello-pangea/dnd
+** Drag and Drop: @hello-pangea/dnd
 
-Styling: Modular CSS for component-level isolation.
+** Styling: Modular CSS for component-level isolation.
 
 # Project Structure
 ```Plaintext
